@@ -3,8 +3,8 @@ from numpy import *
 def act (x):
     return 0 if x < 0.5 else 1
 
-def go (house, rock, attr):
-    x = array([house,rock,attr])
+def go (test1, test2, test3):
+    x = array([test1, test2, test3])
     w11 = [0.3,0.3,0]
     w12 = [0.4,-0.5,1]
     weigth1 = array([w11,w12])
@@ -21,11 +21,11 @@ def go (house, rock, attr):
 
     return y
 
-house =int(input())
-rock = int(input())
-attr = int(input())
+test1 =int(input())
+test2 = int(input())
+test3 = int(input())
 
-res = go(house,rock,attr)
-if res == 1: print('hi')
-else: print('TI LOX AHAHAHAHAHA')
+res = go(test1, test2, test3)
+if res == 1: print('1')
+else: print('0')
 
